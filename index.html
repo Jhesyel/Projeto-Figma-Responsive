@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGenius • Descubra o mundo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <span class="logo-text">travel</span><span class="logo-accent">genius</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Início</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Destinos</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-compass"></i>
+                    <span>Explorar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-heart"></i>
+                    <span>Favoritos</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Minhas viagens</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Configurações</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-mini">
+                    <!-- SUA FOTO AQUI -->
+                    <img src="img/jhesyel-programador.png" 
+                         alt="Jhesyel Enykon" 
+                         class="avatar">
+                    <div>
+                        <p>Jhesyel Enykon</p>
+                        <span>Premium</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- TOPBAR -->
+            <header class="topbar">
+                <button id="menu-btn" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Para onde você quer ir?">
+                </div>
+
+                <div class="topbar-right">
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                    <div class="user-profile">
+                        <!-- SUA FOTO AQUI (mesma que a de cima) -->
+                        <img src="img/jhesyel-programador.png" 
+                             alt="Jhesyel" 
+                             class="avatar">
+                        <span>Jhesyel</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Descubra o mundo com <span class="highlight">inteligência</span></h1>
+                    <p>Sua IA de viagens que planeja tudo por você</p>
+                    
+                    <div class="hero-search">
+                        <div class="input-group">
+                            <label>Destino</label>
+                            <input type="text" placeholder="Ex: Veneza, Itália">
+                        </div>
+                        <div class="input-group">
+                            <label>Data</label>
+                            <input type="date">
+                        </div>
+                        <div class="input-group">
+                            <label>Viajantes</label>
+                            <select>
+                                <option>1 pessoa</option>
+                                <option>2 pessoas</option>
+                                <option>3+ pessoas</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary" onclick="buscarViagem()">
+                            <i class="fas fa-search"></i> Buscar
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DESTAQUES -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>Destinos em destaque</h2>
+                    <a href="#" class="see-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="destinos-grid" id="destinos-grid">
+                    <!-- Cards gerados via JS -->
+                </div>
+            </section>
+
+            <!-- GALERIA -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>Galeria de inspiração</h2>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://picsum.photos/id/1015/400/300" alt="Veneza">
+                    <img src="https://picsum.photos/id/133/400/300" alt="Paris">
+                    <img src="https://picsum.photos/id/201/400/300" alt="Nova York">
+                    <img src="https://picsum.photos/id/251/400/300" alt="Tóquio">
+                    <img src="https://picsum.photos/id/1016/400/300" alt="Dubai">
+                    <img src="https://picsum.photos/id/870/400/300" alt="Santorini">
+                    <img src="https://picsum.photos/id/1018/400/300" alt="Machu Picchu">
+                    <img src="https://picsum.photos/id/133/400/300" alt="Bali">
+                    <img src="https://picsum.photos/id/201/400/300" alt="Patagônia">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
